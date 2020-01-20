@@ -1,13 +1,26 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 
-import Example from '../../src'
+// const ColTree =  require('../../src/index.js').ColTree
+
+// const Taxon =  require('../../src/index.js').Taxon
+
+import {Tree , Taxon} from '../../src'
+
+import history from '../../src/history'
 
 class Demo extends Component {
   render() {
+    const {location: path} = history;
     return <div>
       <h1>col-tree-browser Demo</h1>
-      <Example/>
+     
+     
+        <React.Fragment>
+       {path.pathname === '/data/tree' && <Tree catalogueKey={3} pathToTaxon="/data/taxon/"/>}
+       {  path.pathname.indexOf('/data/taxon/') === 0 && <Taxon catalogueKey={3} pathToTree="/data/tree"></Taxon> }
+       </React.Fragment>
+   
     </div>
   }
 }
