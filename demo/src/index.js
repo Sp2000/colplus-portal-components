@@ -17,9 +17,9 @@ class Demo extends Component {
      
      
         <React.Fragment>
-       {path.pathname === '/data/tree' && <Tree catalogueKey={3} pathToTaxon="/data/taxon/"/>}
-       {  path.pathname.indexOf('/data/taxon/') === 0 && <Taxon catalogueKey={3} pathToTree="/data/tree"></Taxon> }
-       {  path.pathname.indexOf('/data/search') === 0 && <Search catalogueKey={3} pathToTaxon="/data/taxon/"></Search> }
+       {path.pathname === '/data/tree' && <Tree catalogueKey={"3LR"} pathToTaxon="/data/taxon/"/>}
+       {  path.pathname.indexOf('/data/taxon/') === 0 && <Taxon catalogueKey={"3LR"} pathToTree="/data/tree"></Taxon> }
+       {  path.pathname.indexOf('/data/search') === 0 && <Search catalogueKey={"3LR"} pathToTaxon="/data/taxon/"></Search> }
 
        </React.Fragment>
    
