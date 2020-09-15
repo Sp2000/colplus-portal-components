@@ -5,7 +5,7 @@ import {render} from 'react-dom'
 
 // const Taxon =  require('../../src/index.js').Taxon
 
-import {Tree , Taxon, Search, Dataset} from '../../src'
+import {Tree , Taxon, Search, Dataset, DatasetSearch} from '../../src'
 
 import history from '../../src/history'
 
@@ -21,6 +21,7 @@ class Demo extends Component {
        {  path.pathname.indexOf('/data/taxon/') === 0 && <Taxon catalogueKey={"3LR"} pathToTree="/data/tree" pathToSearch="/data/search" pathToDataset="/data/source/"></Taxon> }
        {  path.pathname.indexOf('/data/search') === 0 && <Search catalogueKey={"3LR"} pathToTaxon="/data/taxon/"></Search> }
        {  path.pathname.indexOf('/data/source') === 0 && <Dataset catalogueKey={"3LR"} pathToTree="/data/tree"></Dataset> }
+       {  path.pathname.indexOf('/data/contributors') === 0 && <DatasetSearch catalogueKey={"3LR"} pathToDataset="/data/source/"></DatasetSearch> }
 
        </React.Fragment>
    
