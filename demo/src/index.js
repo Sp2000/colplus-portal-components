@@ -30,6 +30,7 @@ class Demo extends Component {
               pathToTree="/data/tree"
               pathToSearch="/data/search"
               pathToDataset="/data/source/"
+              pathToTaxon="/data/taxon/"
             ></Taxon>
           )}
           {path.pathname.indexOf("/data/search") === 0 && (
