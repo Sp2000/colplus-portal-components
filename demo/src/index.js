@@ -9,11 +9,13 @@ import { Tree, Taxon, Search, Dataset, DatasetSearch } from "../../src";
 
 import history from "../../src/history";
 
+
 class Demo extends Component {
   render() {
     const { location: path } = history;
     return (
-      <div style={{ background: "#f2f3ed" }}>
+      <div style={{ background: "#f2f3ed", height: '100%'
+    }}>
         <h1>col-tree-browser Demo</h1>
 
         <React.Fragment>
