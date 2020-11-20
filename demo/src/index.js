@@ -21,7 +21,7 @@ class Demo extends Component {
         <React.Fragment>
           {path.pathname === "/data/tree" && (
             <Tree
-            showTreeOptions={true}
+              showTreeOptions={true}
               catalogueKey={"3LR"}
               pathToTaxon="/data/taxon/"
               pathToDataset="/data/source/"
