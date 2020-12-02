@@ -40,7 +40,8 @@ class Demo extends Component {
             <Search catalogueKey={"3LR"} pathToTaxon="/data/taxon/"></Search>
           )}
           {path.pathname.indexOf("/data/source") === 0 && (
-            <Dataset catalogueKey={"3LR"} pathToTree="/data/tree" pathToSearch="/data/search"></Dataset>
+            <Dataset 
+            catalogueKey={"3LR"} pathToTree="/data/tree" pathToSearch="/data/search"></Dataset>
           )}
           {path.pathname.indexOf("/data/contributors") === 0 && (
             <DatasetSearch
