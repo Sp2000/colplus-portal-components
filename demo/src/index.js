@@ -34,6 +34,7 @@ class Demo extends Component {
               pathToSearch="/data/search"
               pathToDataset="/data/source/"
               pathToTaxon="/data/taxon/"
+              pageTitleTemplate="COL | __taxon__"
             ></Taxon>
           )}
           {path.pathname.indexOf("/data/search") === 0 && (
@@ -41,7 +42,13 @@ class Demo extends Component {
           )}
           {path.pathname.indexOf("/data/source") === 0 && (
             <Dataset 
-            catalogueKey={"3LR"} pathToTree="/data/tree" pathToSearch="/data/search"></Dataset>
+              catalogueKey={"3LR"} 
+              pathToTree="/data/tree" 
+              pathToSearch="/data/search"
+              pageTitleTemplate="COL | __dataset__"
+              >
+
+              </Dataset>
           )}
           {path.pathname.indexOf("/data/contributors") === 0 && (
             <DatasetSearch
