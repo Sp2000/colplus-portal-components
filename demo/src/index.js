@@ -22,14 +22,15 @@ class Demo extends Component {
           {path.pathname === "/data/tree" && (
             <Tree
               showTreeOptions={true}
-              catalogueKey={"3LR"}
+              catalogueKey={"2207"}
               pathToTaxon="/data/taxon/"
               pathToDataset="/data/source/"
+              citation="bottom"
             />
           )}
           {path.pathname.indexOf("/data/taxon/") === 0 && (
             <Taxon
-              catalogueKey={"3LR"}
+              catalogueKey={"2207"}
               pathToTree="/data/tree"
               pathToSearch="/data/search"
               pathToDataset="/data/source/"
@@ -38,11 +39,11 @@ class Demo extends Component {
             ></Taxon>
           )}
           {path.pathname.indexOf("/data/search") === 0 && (
-            <Search catalogueKey={"3LR"} pathToTaxon="/data/taxon/"></Search>
+            <Search catalogueKey={"2207"} pathToTaxon="/data/taxon/" citation="bottom"></Search>
           )}
           {path.pathname.indexOf("/data/source") === 0 && (
             <Dataset 
-              catalogueKey={"3LR"} 
+              catalogueKey={"2207"} 
               pathToTree="/data/tree" 
               pathToSearch="/data/search"
               pageTitleTemplate="COL | __dataset__"
@@ -52,7 +53,7 @@ class Demo extends Component {
           )}
           {path.pathname.indexOf("/data/contributors") === 0 && (
             <DatasetSearch
-              catalogueKey={"3LR"}
+              catalogueKey={"2207"}
               pathToDataset="/data/source/"
               pathToSearch="/data/search"
             ></DatasetSearch>
